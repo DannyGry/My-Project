@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dropdown{
+    display: inline-block;
+}
+.logo{
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    padding: 10px 0;
+}
+.logoo{
+    width: 225px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.navc{
+    border-bottom: #6c757d solid 1px;
+    border-top: #6c757d solid 1px;
+    font-family: 'Azeret Mono', monospace; 
+}
+nav{
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header a {
+    color:rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+.aboutme{
+    background-image: url(../images/bgr.png);
+    padding: 50px 0;
+}
+h1{
+    margin-bottom: 30px;
+    font-family: 'Azeret Mono', monospace; 
+    font-weight: 800;
+}
+.aq{
+    line-height: 28px;
+    font-family: 'Azeret Mono', monospace; 
+    font-size: 17px;
+}
+.all{
+    color: #1845a7;
+    font-weight: 800;
+    margin: 0;
+    border-bottom: solid 2px rgb(144, 24, 24);
+    font-family: 'ABeeZee', sans-serif;
+}
+.olinks:hover, .all:hover, .pp:hover{
+    color: white;
+}
+.btn-secondary{
+    background-color: black;
+    border-color: black;
+}
+.content_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+.stpartftr{
+    color: #666;
+}
+.pp{
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    margin-left: 11px;
+}
+
+.dpartftr span{
+    display: flex;
+    flex-direction: column;
+}
+.dpartftr span a{
+    margin: 5px 54px;
+}
+footer{
+    padding-top: 25px;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: transparent;
+}
+
+.carousel{
+    margin: 10px 0px 10px 0px;
+}
+.carousel-caption{
+    right: -30%;
+    bottom: 30%;
+}
+.carousel-control-prev-icon{
+    background-image: url(../images/previous.svg) ;
+    margin-right: 65px;
+}
+.carousel-control-next-icon{
+    background-image: url(../images/next.svg);
+    margin-left: 65px;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(/HelveticaNeueCyr-Heavy/HelveticaNeueCyr-Heavy.woff2) format("woff2"),
+    url(/HelveticaNeueCyr-Heavy/HelveticaNeueCyr-Heavy.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.models{
+    font-family: Helvetica;
+    color: rgb(250, 107, 107);
+}
+.carousel-caption{
+    left: auto;
+    right: 20rem;
+    top: 100px;
+    max-width: 50%;
+}
+.mainq, .wing, .miniq, h5{
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+.carousel-caption.miniqcaption{
+    bottom: 6%;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: rgb(250, 107, 107);
+}
+.aboutme h1, p{
+    text-align: center;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active{
+    height: 600px;
+}
+
+.w-100{
+    margin-top: 100px;
+}
+.d-none{
+    display: block!important;
+}
+.dpartftr span{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sn{
+    transition: 0.5s;
+}
+.sn:hover{
+    opacity: 0.35;
+}
+.card:hover{
+    border-color: whitesmoke;
+}
+@media (max-width:1300px){
+    .carousel-caption{
+        position: static;
+        margin: auto;
+        max-width: 800px;
+    }
+    .carousel-item .w-100{
+        width: 160%!important;
+    }
+    .carousel-item{
+        overflow: hidden;
+        height: auto!important;
+    }
+    .components{
+        column-count: 3;
+        width: 800px;
+        margin-bottom: 25px;
+    }
+    h5{
+        text-align: center;
+        margin: 20px 0px;
+    }
+    h1, .aq{
+        text-align: left !important;
+    }
+}
+
+@media (max-width:860px){
+    .components{
+        column-count: 2;
+        width: 520px;
+    }
+    .carousel-caption{
+        max-width: 495px;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    .olinks, .all{
+        margin-right: 20px;
+    }
+}
+@media (max-width:576px){
+    .content_row{
+        flex-direction: column;
+    }
+    .logoo{
+        margin: 15px 0;
+    }
+    .dpartftr span{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+@media (max-width:536px){
+    .components{
+        column-count: 1;
+        width: 520px;
+    }
+    
+}
+@media (max-width:536px){
+    .carousel-caption{
+        max-width: 475px;
+    }
+}
+@media (max-width: 495px){
+    .components{
+        margin-left: 15px;
+    }
+}
