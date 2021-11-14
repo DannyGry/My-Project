@@ -202,6 +202,19 @@ footer{
         flex-direction: row;
     }
 }
+.dpartftr span{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sn{
+    transition: 0.5s;
+}
+.sn:hover{
+    opacity: 0.35;
+}
+.card:hover{
+    border-color: whitesmoke;
+}
 @media (max-width:536px){
     .components{
         column-count: 1;
@@ -218,17 +231,4 @@ footer{
     .components{
         margin-left: 15px;
     }
-}
-.dpartftr span{
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.sn{
-    transition: 0.5s;
-}
-.sn:hover{
-    opacity: 0.35;
-}
-.card:hover{
-    border-color: whitesmoke;
 }
